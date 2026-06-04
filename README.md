@@ -21,7 +21,7 @@ A progressive, hands-on collection of projects exploring guardrails patterns wit
 | 02 | Model-Based Guardrail | LLM-as-judge safety classifier (SAFE/UNSAFE), gate before main LLM call | `project-02-model-based-guardrail/` |
 | 03 | PII Middleware | Official LangChain PIIMiddleware (redact/mask/block strategies), create_agent, custom regex detector | `project-03-pii-middleware/` |
 | 04 | Human-in-the-Loop | HumanInTheLoopMiddleware, interrupt/resume flow, approve/reject decisions, InMemorySaver checkpointer | `project-04-human-in-loop/` |
-| 05 | Before-Agent Hook | Custom AgentMiddleware, before_agent hook, hook_config(can_jump_to), zero-cost keyword blocking | `project-05-before-agent-hook/` |
+| 05 | Custom Guardrails | Custom AgentMiddleware with before_agent (keyword blocking) + after_agent (output truncation, forbidden phrase filter) | `project-05-custom-guardrails/` |
 
 ## Setup
 
