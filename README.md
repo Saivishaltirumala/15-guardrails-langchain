@@ -7,7 +7,7 @@ A progressive, hands-on collection of projects exploring guardrails patterns wit
 ```
 ┌─────────────────────────────────────────────────┐
 │  Guardrails AI / NeMo    ← guardrail frameworks │
-│  LangChain               ← LLM orchestration    │
+│  LangChain 1.x           ← LLM orchestration    │
 │  Groq                    ← LLM provider (fast)   │
 │  Python                  ← runtime               │
 └─────────────────────────────────────────────────┘
@@ -19,13 +19,13 @@ A progressive, hands-on collection of projects exploring guardrails patterns wit
 |---|---------|-----------------|----------|
 | 01 | Deterministic Guardrails | Keyword blocking, PII regex detection, input/output filtering, redaction, agent flow | `project-01-deterministic-guardrails/` |
 | 02 | Model-Based Guardrail | LLM-as-judge safety classifier (SAFE/UNSAFE), gate before main LLM call | `project-02-model-based-guardrail/` |
-| 03 | PII Middleware | Reusable PIIMiddleware class (redact/mask/block strategies), middleware stack, agent integration | `project-03-pii-middleware/` |
+| 03 | PII Middleware | Official LangChain PIIMiddleware (redact/mask/block strategies), create_agent, custom regex detector | `project-03-pii-middleware/` |
 
 ## Setup
 
 ```bash
 cd 15-guardrails-langchain
-python -m venv venv
+python3.10 -m venv venv   # Requires Python 3.10+ (langchain 1.x)
 source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
