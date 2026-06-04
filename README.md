@@ -18,6 +18,7 @@ A progressive, hands-on collection of projects exploring guardrails patterns wit
 | # | Project | Concepts Covered | Location |
 |---|---------|-----------------|----------|
 | 01 | Deterministic Guardrails | Keyword blocking, PII regex detection, input/output filtering, redaction, agent flow | `project-01-deterministic-guardrails/` |
+| 02 | Model-Based Guardrail | LLM-as-judge safety classifier (SAFE/UNSAFE), gate before main LLM call | `project-02-model-based-guardrail/` |
 
 ## Setup
 
